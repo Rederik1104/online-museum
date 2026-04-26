@@ -210,10 +210,6 @@ $result = $conn->query("SELECT * FROM artworks ORDER BY created_at DESC");
             <div class="content">
                 <h3><?= htmlspecialchars($row['title']) ?></h3>
                 <p><?= htmlspecialchars($row['description']) ?></p>
-
-                <div class="likes">
-                    <span class="count">❤️ <?= $row['likes'] ?></span>
-                </div>
             </div>
         </div>
 
